@@ -44,13 +44,12 @@ print('Hello.' + '\n' + "If you would like to convert from metric to imperial, p
 while program=='run':        
     #system selection
     selection1 = str(input('Convert from metric or imperial?: '))
+    while selection1 != 'metric' and selection1 != 'imperial':
+        selection1 = str(input('Invalid input. Please choose metric or imperial: '))
     if selection1=='metric':
-        print('Would you like to convert kilometers, Celsius, liters, kilograms, or centimeters?')
-                
-    elif selection1=='imperial':
-        print('Would you like to convert miles, Fahrenheit, gallons, pounds, or inches?')
+        print('Would you like to convert kilometers, Celsius, liters, kilograms, or centimeters?')            
     else:
-        print('Invalid input. Please attempt to enter a unit for conversion.')
+        print('Would you like to convert miles, Fahrenheit, gallons, pounds, or inches?')
                     
     #unit selection
     selection2 = str(input('I would like to convert: '))
@@ -58,66 +57,87 @@ while program=='run':
     #kilometers to miles
     if selection2=='kilometers':
         KM = float(input('Please enter the number of kilometers: '))
+        while KM<0:
+            KM = float(input('Invalid selection. Please enter a positive value: '))
         MI = KM/1.6
         print(KM, 'kilometers is approxiamately equal to', format(MI, '.2f'), 'miles.')
 
     #Celsius to Fahrenheit
     elif selection2=='Celsius' or selection2=='celsius':
         C = float(input('Please enter the temperature in Celsius: '))
+        while C>537:
+            C = float(input('Invalid selection. Please enter a value less than or equal to 537: '))
         F = (C*9/5)+32
         print(C, 'degrees Celsius is approxiamately equal to', format(F, '.2f'), 'degrees Fahrenheit.')
 
     #liters to gallons
     elif selection2=='liters':
         L = float(input('Please enter the number of liters: '))
+        while L<0:
+            L = float(input('Invalid selection. Please enter a positive value: '))
         G = L/3.9
         print(L, 'liters is approxiamately equal to', format(G, '.2f'),'gallons.')
                         
     #kilograms to pounds
     elif selection2=='kilograms':
          KG = float(input('Please enter the number of kilograms: '))
+         while KG<0:
+            KG = float(input('Invalid selection. Please enter a positive value: '))
          LB = KG/0.45
          print(KG, 'kilograms is approxiamately equal to', format(LB, '.2f'), 'pounds.')
 
     #centimeters to inches
     elif selection2=='centimeters':
         CM = float(input('Please enter the number of centimeters: '))
+        while CM<0:
+            CM = float(input('Invalid selection. Please enter a positive value: '))
         IN = CM/2.54
         print(CM, 'centimeters is approxiamately equal to', format(IN, '.2f'), 'inches.')
 
     #miles to kilometers
     elif selection2=='miles':
         MI = float(input('Please enter the number of miles: '))
+        while MI<0:
+            MI = float(input('Invalid selection. Please enter a positive value: '))
         KM = MI/0.625
         print(MI, 'miles is approxiamately equal to', format(KM, '.2f'), 'kilometers.')
 
     #Fahrenheit to Celsius
     elif selection2=='Fahrenheit' or selection2=='fahrenheit':
         F = float(input('Please enter the temperature in Fahrenheit: '))
+        while F>1000:
+            F = float(input('Invalid selection. Please enter a value less than or equal to 1000: '))
         C = (F-32)*5/9
         print(F, 'degrees Fahrenheit is approxiamately equal to', format(C, '.2f'), 'degrees Celsius.')
 
     #gallons to liters
     elif selection2=='gallons':
         G = float(input('Please enter the number of gallons: '))
+        while G<0:
+            G = float(input('Invalid selection. Please enter a positive value: '))
         L = G*3.9
         print(G, 'gallons is approxiamately equal to', format(L, '.2f'), 'liters.')
 
     #pounds to kilograms
     elif selection2=='pounds':
         LB = float(input('Please enter the number of pounds: '))
+        while LB<0:
+            LB = float(input('Invalid selection. Please enter a positive value: '))
         KG = LB/2.22
         print(LB, 'pounds is approxiamately equal to', format(KG, '.2f'), 'kilograms.')
 
     #inches to centimeters
     elif selection2=='inches':
         IN = float(input('Please enter the number of inches: '))
+        while IN<0:
+            IN = float(input('Invalid selection. Please enter a positive value: '))
         CM = IN*2.54
         print(IN, 'inches is approxiamately equal to', format(CM, '.2f'), 'centimeters.')
 
     else:
         print('Invalid submission. Please try again.')
 
+#Convert another unit or terminate program
     selection3 = str(input('Would you like to make another conversion?' + '\n' + 'Please enter yes or no: '))
     if selection3=='yes':
          program = 'run'

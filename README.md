@@ -2,13 +2,19 @@
 
 The original repository only contained my first project for my Intro to Programming class, containing the following file
 
-# UnitConverterPython
+## UnitConverterPython
 A program for converting common metric units to imperial and vice versa
 
 # Version 1.1
 
-Added further project files from my course and the following updates for the unit converter
+Added further project files from my course and the following updates for the unit converter and the two following files
 
-# UnitConverterPython
+## UnitConverterPython
 Added further input validation for user selection on systems and units
 Added input control on indivdual unit parameters
+
+## Salary
+A program for calculating a workers salary in a given period with deductions
+
+## Triangle
+A simple program that prints an inverted right triangle

@@ -18,3 +18,17 @@ A program for calculating a workers salary in a given period with deductions
 
 ## Triangle
 A simple program that prints an inverted right triangle
+
+# Update 11/22/17
+
+## Unit Converter
+Modularized program and moved conversion functions into seperate module
+
+## Guessing Game
+Calculates a random number and has user guess. When user has guessed the number, it will tell them how many tries it took them and ask if they want to play again.
+
+## Ticket Profits
+Calculates profits based off of user inputted amount of tickets
+
+## Salary
+Modularizes program

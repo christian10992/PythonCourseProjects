@@ -32,3 +32,8 @@ Calculates profits based off of user inputted amount of tickets
 
 ## Salary
 Modularizes program
+
+# Update  11/24 and 11/25
+
+## Euro Converter
+Menu-driven program that converts euros to dollars and vice-versa

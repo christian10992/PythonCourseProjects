@@ -26,6 +26,7 @@ def main():
             try:
                 euros, dollars = eurosToDollars()
             except ValueError:
+                euros = -1
                 print('The number you enter must be a valid number.')
                 print()
             else:
@@ -37,6 +38,7 @@ def main():
             try:
                 dollars, euros = dollarsToEuros()
             except ValueError:
+                dollars = -1
                 print('The number you enter must be a valid number.')
                 print()
             else:

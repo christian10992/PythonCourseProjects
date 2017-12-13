@@ -33,7 +33,15 @@ Calculates profits based off of user inputted amount of tickets
 ## Salary
 Modularizes program
 
-# Update  11/24 and 11/25
+# Update  11/24
 
 ## Euro Converter
 Menu-driven program that converts euros to dollars and vice-versa
+
+# Update 12/2
+
+## Euro Converter
+Added some previously-omitted lines back in
+
+## Student Grades File
+A program to write and read a number of students' names and grades to a .txt file

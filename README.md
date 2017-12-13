@@ -45,3 +45,14 @@ Added some previously-omitted lines back in
 
 ## Student Grades File
 A program to write and read a number of students' names and grades to a .txt file
+
+# Update 12/12
+
+## Monkeys
+Uses a 2d list to store the amount of food 3 monkeys ate during the week, prints the results, and gives the average for each.
+
+## Rainfall
+Allows user to enter rainfall ofr each month of a year and gives them the average, total, minimum, and maximum rainfalls.
+
+## Class List
+List manipulation and file in/out

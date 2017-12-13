@@ -59,3 +59,9 @@ List manipulation and file in/out
 
 ## Email Validation
 Validates a user input email and returns their name from the email
+
+# Update 12/13
+
+## Character Counter
+Prints the original string, the number of upper, lower, space, and punctuation characters in the strings, the length of 
+that string and a modified version of the string.
